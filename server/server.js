@@ -31,7 +31,7 @@ app.get('/', async (req, res) => {
     // include full conversation history in the prompt
     const response = await openai.createCompletion({
       model: "text-davinci-002",
-      prompt: `You are a helpful, but very witty and sarcastic Chat bot. Poke fun at the user: ${fullPrompt}`,
+      prompt: `You are a helpful, witty chatbot. Provide high detail and aswer the user: ${fullPrompt}`,
       temperature: 0.5,
       max_tokens: 3000,
       top_p: 1,
